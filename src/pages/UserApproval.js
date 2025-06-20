@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import axios from 'axios';
 
 const InputComponent = () => {
   const [text, setText1] = useState("");
@@ -21,6 +22,18 @@ const InputComponent = () => {
   function handleAlert2(){
     alert("hello3");
   }
+
+  useEffect(() => {
+    axios.get('http://localhost:8080/api/noAuth/helloNoAuth')
+      .then(response => {
+        const username = response.data;
+        alert(`사용자 이름: ${username}`);
+      })
+      .catch(error => {
+        alert(`에러 발생: ${error.message}`);
+      });
+  }, []);
+
 
   return (
     <div>
