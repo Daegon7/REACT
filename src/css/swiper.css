@@ -1,0 +1,16 @@
+.slider-container {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+}
+
+.slider {
+  display: flex;
+  gap: 16px;
+  animation: slide 5s infinite linear;
+}
+
+@keyframes slide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-100%); }
+}
