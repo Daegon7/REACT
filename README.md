@@ -1,4 +1,11 @@
+java -version
+java version "24.0.1" 2025-04-15
+Java(TM) SE Runtime Environment (build 24.0.1+9-30)
+Java HotSpot(TM) 64-Bit Server VM (build 24.0.1+9-30, mixed mode, sharing)
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 
 ## Available Scripts
 
